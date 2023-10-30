@@ -30,3 +30,7 @@ fun main() {
     println("Создан заказ с ID: ${order.id}, Стоимость доставки: ${deliveryCostCalculator.calculateCost(order)}")
     println("Пользователь аутентифицирован: $isAuthenticated")
 }
+
+/*
+В этом примере Main-класс создает объекты продукта и пользователя, затем создает заказ с использованием OrderService и проверяет аутентификацию пользователя с использованием UserService.
+ */

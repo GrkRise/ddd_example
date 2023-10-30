@@ -12,3 +12,7 @@ class OrderService(private val orderRepository: OrderRepository, private val del
         return order
     }
 }
+
+/**В этом примере OrderService использует OrderRepository и DeliveryCostCalculator для создания заказа и рассчета стоимости доставки.
+ * Аналогично, вы можете создать сервисы для других агрегатов и организовать их взаимодействие в зависимости от бизнес-логики вашего приложения.
+ */

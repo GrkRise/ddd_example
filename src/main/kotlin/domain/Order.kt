@@ -6,6 +6,10 @@ data class Order(val id: String, val products: List<Product>, val deliveryAddres
     init {
         require(products.isNotEmpty()) { "Заказ должен содержать хотя бы один продукт." }
     }
+    /**
+     * В этом примере инвариант гарантирует, что заказ всегда содержит хотя бы один продукт.
+     * Если попытаться создать заказ без продуктов, будет выброшено исключение.
+     */
 }
 
 class OrderRepository {
